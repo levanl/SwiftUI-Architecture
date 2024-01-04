@@ -10,6 +10,7 @@ import NetworkingPackageGeneric
 
 final class MainPageViewModel: ObservableObject {
     
+    // MARK: - Properties
     @Published var mediaData: [Item] = []
     @Published var sources: [Sources] = []
     @Published var innerHref: String = ""
@@ -27,12 +28,5 @@ final class MainPageViewModel: ObservableObject {
                 print(error.localizedDescription)
             }
         }
-        
-        
     }
-    
-    
-    
-    
-    
 }

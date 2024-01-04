@@ -10,10 +10,11 @@ import AVKit
 
 struct MainPageView: View {
     
+    // MARK: - Properties
     @EnvironmentObject private var viewModel: MainPageViewModel
     @SwiftUI.State private var searchText = ""
-
     
+    // MARK: - Body
     var body: some View {
         NavigationStack {
             VStack {

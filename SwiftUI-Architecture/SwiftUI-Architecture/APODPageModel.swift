@@ -7,12 +7,13 @@
 
 import Foundation
 
+// MARK: - APOD Model
 struct APODModel: Codable {
     let date, explanation: String
     let hdurl: String
     let mediaType, serviceVersion, title: String
     let url: String
-
+    
     enum CodingKeys: String, CodingKey {
         case date, explanation, hdurl
         case mediaType = "media_type"

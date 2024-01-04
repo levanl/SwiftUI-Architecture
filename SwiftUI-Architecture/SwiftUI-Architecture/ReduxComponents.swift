@@ -56,8 +56,7 @@ func reducer(action: Action, state: State) -> State {
     
     switch action {
     case let action as FetchAPODAction:
-        print("FetchAPODAction")
-        //        state.APODInfo.append(action.APODInfo)
+        print(action)
     case let action as SetAPODInfoAction:
         print("SetAPODInfoAction")
         state.APODInfo.append(contentsOf: action.APODInfo)
@@ -73,10 +72,9 @@ typealias Reducer = (Action, State) -> State
 
 
 // MARK: - Story
-
 let story = ApplicationStory(reducer: reducer)
 
-class ApplicationStory: ObservableObject {
+final class ApplicationStory: ObservableObject {
     
     var reducer: Reducer
     @Published var state: State

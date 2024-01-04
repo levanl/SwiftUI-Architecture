@@ -9,9 +9,10 @@ import SwiftUI
 
 @main
 struct SwiftUI_ArchitectureApp: App {
-    
+    // MARK: - Properties
     @StateObject private var viewModel = MainPageViewModel()
     
+    // MARK: - Body
     var body: some Scene {
         WindowGroup {
             MainPageView()

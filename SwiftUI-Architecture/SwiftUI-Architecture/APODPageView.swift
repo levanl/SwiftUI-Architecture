@@ -8,9 +8,10 @@
 import SwiftUI
 
 struct APODPageView: View {
-    
+    // MARK: - Properties
     @EnvironmentObject var story: ApplicationStory
     
+    // MARK: - Body
     var body: some View {
         VStack {
             if story.state.APODInfo.isEmpty {
