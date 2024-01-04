@@ -7,18 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C451BB932B45C95F0028AF41 /* MainPageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C451BB922B45C95F0028AF41 /* MainPageModel.swift */; };
+		C451BB962B45CAA20028AF41 /* NetworkingPackageGeneric in Frameworks */ = {isa = PBXBuildFile; productRef = C451BB952B45CAA20028AF41 /* NetworkingPackageGeneric */; };
+		C451BB982B467E020028AF41 /* APODPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C451BB972B467E020028AF41 /* APODPageView.swift */; };
 		C4E8F36C2B4443C400C33C70 /* SwiftUI_ArchitectureApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E8F36B2B4443C400C33C70 /* SwiftUI_ArchitectureApp.swift */; };
-		C4E8F36E2B4443C400C33C70 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E8F36D2B4443C400C33C70 /* ContentView.swift */; };
+		C4E8F36E2B4443C400C33C70 /* MainPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E8F36D2B4443C400C33C70 /* MainPageView.swift */; };
 		C4E8F3702B4443C500C33C70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4E8F36F2B4443C500C33C70 /* Assets.xcassets */; };
 		C4E8F3732B4443C500C33C70 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4E8F3722B4443C500C33C70 /* Preview Assets.xcassets */; };
+		C4E8F37D2B44478800C33C70 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E8F37C2B44478700C33C70 /* SearchBarView.swift */; };
+		C4E8F37F2B444B3200C33C70 /* MainPageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E8F37E2B444B3200C33C70 /* MainPageViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C451BB922B45C95F0028AF41 /* MainPageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageModel.swift; sourceTree = "<group>"; };
+		C451BB972B467E020028AF41 /* APODPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODPageView.swift; sourceTree = "<group>"; };
 		C4E8F3682B4443C400C33C70 /* SwiftUI-Architecture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Architecture.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4E8F36B2B4443C400C33C70 /* SwiftUI_ArchitectureApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_ArchitectureApp.swift; sourceTree = "<group>"; };
-		C4E8F36D2B4443C400C33C70 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C4E8F36D2B4443C400C33C70 /* MainPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageView.swift; sourceTree = "<group>"; };
 		C4E8F36F2B4443C500C33C70 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C4E8F3722B4443C500C33C70 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C4E8F37C2B44478700C33C70 /* SearchBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchBarView.swift; path = ../../../../../../.Trash/SearchBarView.swift; sourceTree = "<group>"; };
+		C4E8F37E2B444B3200C33C70 /* MainPageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C451BB962B45CAA20028AF41 /* NetworkingPackageGeneric in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,10 +61,14 @@
 		C4E8F36A2B4443C400C33C70 /* SwiftUI-Architecture */ = {
 			isa = PBXGroup;
 			children = (
+				C4E8F3792B4445A900C33C70 /* Components */,
 				C4E8F36B2B4443C400C33C70 /* SwiftUI_ArchitectureApp.swift */,
-				C4E8F36D2B4443C400C33C70 /* ContentView.swift */,
+				C4E8F36D2B4443C400C33C70 /* MainPageView.swift */,
+				C4E8F37E2B444B3200C33C70 /* MainPageViewModel.swift */,
+				C451BB922B45C95F0028AF41 /* MainPageModel.swift */,
 				C4E8F36F2B4443C500C33C70 /* Assets.xcassets */,
 				C4E8F3712B4443C500C33C70 /* Preview Content */,
+				C451BB972B467E020028AF41 /* APODPageView.swift */,
 			);
 			path = "SwiftUI-Architecture";
 			sourceTree = "<group>";
@@ -65,6 +79,14 @@
 				C4E8F3722B4443C500C33C70 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C4E8F3792B4445A900C33C70 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				C4E8F37C2B44478700C33C70 /* SearchBarView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +105,9 @@
 			dependencies = (
 			);
 			name = "SwiftUI-Architecture";
+			packageProductDependencies = (
+				C451BB952B45CAA20028AF41 /* NetworkingPackageGeneric */,
+			);
 			productName = "SwiftUI-Architecture";
 			productReference = C4E8F3682B4443C400C33C70 /* SwiftUI-Architecture.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +136,9 @@
 				Base,
 			);
 			mainGroup = C4E8F35F2B4443C400C33C70;
+			packageReferences = (
+				C451BB942B45CAA20028AF41 /* XCRemoteSwiftPackageReference "networking-package-generic" */,
+			);
 			productRefGroup = C4E8F3692B4443C400C33C70 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +165,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4E8F36E2B4443C400C33C70 /* ContentView.swift in Sources */,
+				C451BB932B45C95F0028AF41 /* MainPageModel.swift in Sources */,
+				C4E8F37F2B444B3200C33C70 /* MainPageViewModel.swift in Sources */,
+				C4E8F36E2B4443C400C33C70 /* MainPageView.swift in Sources */,
+				C4E8F37D2B44478800C33C70 /* SearchBarView.swift in Sources */,
 				C4E8F36C2B4443C400C33C70 /* SwiftUI_ArchitectureApp.swift in Sources */,
+				C451BB982B467E020028AF41 /* APODPageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +376,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C451BB942B45CAA20028AF41 /* XCRemoteSwiftPackageReference "networking-package-generic" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/levanl/networking-package-generic.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C451BB952B45CAA20028AF41 /* NetworkingPackageGeneric */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C451BB942B45CAA20028AF41 /* XCRemoteSwiftPackageReference "networking-package-generic" */;
+			productName = NetworkingPackageGeneric;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C4E8F3602B4443C400C33C70 /* Project object */;
 }
