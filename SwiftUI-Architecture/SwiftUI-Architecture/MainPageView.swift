@@ -11,7 +11,7 @@ import AVKit
 struct MainPageView: View {
     
     @EnvironmentObject private var viewModel: MainPageViewModel
-    @State private var searchText = ""
+    @SwiftUI.State private var searchText = ""
 
     
     var body: some View {
